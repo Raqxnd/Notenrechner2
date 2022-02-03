@@ -8,7 +8,7 @@ function tfAuslesen() {
     summe = 0
     anzahlNoten = 0
 
-    n1 = parseInt(document.getElementById("tfNote1").value);
+    n1 = parseInt(document.getElementById("tfNote1").value); //Auslesen eines Notenfeldes und Konvertierung in Integer
     n2 = parseInt(document.getElementById("tfNote2").value);
     n3 = parseInt(document.getElementById("tfNote3").value);
     n4 = parseInt(document.getElementById("tfNote4").value);
@@ -28,15 +28,15 @@ function tfAuslesen() {
 
     if (ergebnis > 9.9)
     {
-        document.getElementById("ausgabe").style.color = "green"
+        document.getElementById("ausgabe").style.color = "green" //Grüne Anzeige wenn Punkte über 10 sind
     }
     else
     {
-        document.getElementById("ausgabe").style.color = "orange"
+        document.getElementById("ausgabe").style.color = "orange" //Gelbe/Orange Anzeige wenn Punkte unter 10 sind
     }
     if (ergebnis < 5)
     {
-        document.getElementById("ausgabe").style.color = "crimson"
+        document.getElementById("ausgabe").style.color = "crimson" //Rote Anzeige wenn Punkte unter 5.0 sind
     }
 }
 
